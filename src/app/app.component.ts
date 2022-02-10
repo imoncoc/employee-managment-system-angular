@@ -15,7 +15,7 @@ import { EmployeePost } from './shared/employeePost.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'crud-management';
+  title = 'Employee-management-system';
   displayedColumns: string[] = ['employeeName', 'category', 'date', 'position', 'salary', 'about', 'action'];
   dataSource!: MatTableDataSource<EmployeePost>;
   loadEmployeeList: EmployeePost[] = [];
