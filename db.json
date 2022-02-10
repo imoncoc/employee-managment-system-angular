@@ -1,0 +1,57 @@
+{
+  "productList": [
+    {
+      "employeeName": "Jhon Smith",
+      "category": "front-end",
+      "position": "Intern-Ship",
+      "salary": 500,
+      "about": "New Joining",
+      "date": "2022-01-29T18:00:00.000Z",
+      "id": 7
+    },
+    {
+      "employeeName": "Json Roy",
+      "category": "full-stack",
+      "position": "Senior",
+      "salary": 3000,
+      "about": "Senior Full Stack Developer",
+      "date": "2020-07-07T18:00:00.000Z",
+      "id": 8
+    },
+    {
+      "employeeName": "Moin Ali",
+      "category": "front-end",
+      "position": "Mid-Level",
+      "salary": 2500,
+      "about": "Front End Developer",
+      "date": "2021-02-02T18:00:00.000Z",
+      "id": 9
+    },
+    {
+      "employeeName": "Holder",
+      "category": "front-end",
+      "position": "Intern-Ship",
+      "salary": 500,
+      "about": "New Employee",
+      "date": "2022-02-07T18:00:00.000Z",
+      "id": 10
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

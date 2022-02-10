@@ -1,0 +1,51 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Employee Name</mat-label>
+      <input formControlName="employeeName" matInput placeholder="Employee Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label placeholder="Category">Category Developer</mat-label>
+      <mat-select formControlName="category" placeholder="Category">
+        <mat-option value="front-end">Front End</mat-option>
+        <mat-option value="Back-end">Back End</mat-option>
+        <mat-option value="full-stack">Full Stack</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date joining</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <label for=""><h1>Product Freshness</h1></label>
+    <mat-radio-group formControlName="position" class="example-radio-group">
+      <mat-radio-button class="example-radio-button" *ngFor="let position of positionList" [value]="position">
+        {{position}}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Salary</mat-label>
+      <input matInput type="number" placeholder="Salary" formControlName="salary">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>About</mat-label>
+      <textarea matInput formControlName="about"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+
+  <button mat-raised-button color="primary" (click)="addProduct()"
+   [disabled]="!productForm.valid"> {{ actionButton }} </button>
+</div>
+
+
